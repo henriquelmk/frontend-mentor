@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://henriquelmk.github.io/frontend-mentor/3-column-preview-card-component/)
+- Live Site URL: [GitHub Pages](https://henriquelmk.github.io/frontend-mentor/3-column-preview-card-component/)
 
 ## My process
 
