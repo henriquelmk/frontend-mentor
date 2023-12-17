@@ -1,0 +1,96 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --light-blue: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    max-width: 60rem;
+    overflow: hidden;
+    border-radius: 0.675rem;
+}
+
+section { 
+    padding: 3.5rem;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+h2 {
+    margin: 2rem 0 2rem 0;
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+}
+
+p {
+    margin-bottom: 7rem;
+}
+
+.btn {
+    padding: 1em 2em;
+    border-radius: 1.5rem;
+    background-color: var(--very-light-gray);
+    text-decoration: none;
+}
+
+.sedans .btn {
+    color: var(--bright-orange);
+}
+
+.suvs .btn {
+    color: var(--dark-cyan);
+}
+
+.luxury .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+    border: 0.15rem var(--very-light-gray) solid;
+    background-color: transparent;
+    color: var(--very-light-gray);
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+    }
+}
